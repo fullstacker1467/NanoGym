@@ -1,0 +1,232 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Montserrat", sans-serif;
+  transition: all ease-in-out 0.3s;
+}
+
+body.active {
+  overflow: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  cursor: default;
+}
+
+.container {
+  width: 1400px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+::selection {
+  color: #2c3333;
+  background: #54b435;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #2c3333;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #54b435;
+}
+
+.loader {
+  background: #2c3333;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 9999;
+  .loader_inner {
+    animation: animate 1.5s linear infinite;
+    clip: rect(0, 80px, 80px, 40px);
+    height: 80px;
+    width: 80px;
+    position: absolute;
+    left: calc(50% - 40px);
+    top: calc(50% - 40px);
+    &:after {
+      animation: animate2 1.5s ease-in-out infinite;
+      clip: rect(0, 80px, 80px, 40px);
+      content: "";
+      border-radius: 50%;
+      height: 80px;
+      width: 80px;
+      position: absolute;
+    }
+  }
+}
+@keyframes animate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(220deg);
+  }
+}
+@keyframes animate2 {
+  0% {
+    box-shadow: inset #54b435 0 0 0 17px;
+    transform: rotate(-140deg);
+  }
+  50% {
+    box-shadow: inset #54b435 0 0 0 2px;
+  }
+  100% {
+    box-shadow: inset #54b435 0 0 0 17px;
+    transform: rotate(140deg);
+  }
+}
+
+nav.active {
+  background: #2c3333e3;
+  backdrop-filter: blur(10px);
+}
+
+nav {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 80px;
+  z-index: 2344455;
+  .container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .logo {
+      color: #fff;
+      font-size: 23px;
+      i {
+        color: #54b435;
+        margin: 0 5px;
+      }
+    }
+    .humb {
+      color: #fff;
+      font-size: 25px;
+      display: none;
+      cursor: pointer;
+    }
+    ul {
+      display: flex;
+      gap: 30px;
+      a {
+        color: #fff;
+        font-weight: 400;
+      }
+      .login {
+        color: #fff;
+        background: #54b435;
+        padding: 10px;
+        border-radius: 5px;
+      }
+    }
+  }
+}
+
+.first {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.918),
+      rgba(0, 0, 0, 0.548)
+    ),
+    url("https://images.squarespace-cdn.com/content/v1/5e82ece6a24faf1f39f4d723/1629744618799-NCMG8LIBU9LZRE1QHNU4/Gym-Eesti-Tallinn-Mustika-1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  .container {
+    h3 {
+      color: #54b435;
+      font-weight: 400;
+      font-size: 25px;
+    }
+    h1 {
+      color: #fff;
+      word-spacing: 6px;
+      letter-spacing: 3px;
+      font-size: 55px;
+      max-width: 800px;
+    }
+    a {
+      color: black;
+      background: #54b435;
+      padding: 10px 20px;
+      margin: 10px 0;
+      font-size: 20px;
+      border-radius: 1px;
+      display: inline-block;
+      &:hover {
+        background: #2c3333;
+        color: #54b435;
+      }
+    }
+  }
+}
+
+.second {
+  padding: 30px 0;
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    img {
+      width: 40%;
+    }
+    .left {
+      h3 {
+        color: #54b435;
+        font-weight: 400;
+        font-size: 17px;
+      }
+      h1 {
+        color: #2c3333;
+        font-size: 35px;
+        max-width: 550px;
+        margin: 15px 0;
+      }
+      p {
+        color: #393053;
+        font-weight: 300;
+        max-width: 600px;
+      }
+      a {
+        display: inline-block;
+        color: #2c3333;
+        background: #63ec36;
+        padding: 10px 20px;
+        margin: 10px 0;
+        font-size: 20px;
+        border-radius: 1px;
+        display: inline-block;
+        &:hover {
+          background: #2c3333;
+          color: #6df141;
+        }
+      }
+    }
+  }
+}
