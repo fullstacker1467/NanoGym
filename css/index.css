@@ -31,12 +31,12 @@ p {
 
 ::-moz-selection {
   color: #2c3333;
-  background: #54b435;
+  background: #63ec36;
 }
 
 ::selection {
   color: #2c3333;
-  background: #54b435;
+  background: #63ec36;
 }
 
 ::-webkit-scrollbar {
@@ -48,7 +48,7 @@ p {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #54b435;
+  background: #63ec36;
 }
 
 .loader {
@@ -91,14 +91,14 @@ p {
 }
 @keyframes animate2 {
   0% {
-    box-shadow: inset #54b435 0 0 0 17px;
+    box-shadow: inset #63ec36 0 0 0 17px;
     transform: rotate(-140deg);
   }
   50% {
-    box-shadow: inset #54b435 0 0 0 2px;
+    box-shadow: inset #63ec36 0 0 0 2px;
   }
   100% {
-    box-shadow: inset #54b435 0 0 0 17px;
+    box-shadow: inset #63ec36 0 0 0 17px;
     transform: rotate(140deg);
   }
 }
@@ -127,7 +127,7 @@ nav .container .logo {
   font-size: 23px;
 }
 nav .container .logo i {
-  color: #54b435;
+  color: #63ec36;
   margin: 0 5px;
 }
 nav .container .humb {
@@ -145,8 +145,9 @@ nav .container ul a {
   font-weight: 400;
 }
 nav .container ul .login {
-  color: #fff;
-  background: #54b435;
+  color: #2c3333;
+  font-weight: 500;
+  background: #63ec36;
   padding: 10px;
   border-radius: 5px;
 }
@@ -160,7 +161,7 @@ nav .container ul .login {
   background-repeat: no-repeat;
 }
 .first .container h3 {
-  color: #54b435;
+  color: #63ec36;
   font-weight: 400;
   font-size: 25px;
 }
@@ -172,8 +173,8 @@ nav .container ul .login {
   max-width: 800px;
 }
 .first .container a {
-  color: black;
-  background: #54b435;
+  color: #2c3333;
+  background: #63ec36;
   padding: 10px 20px;
   margin: 10px 0;
   font-size: 20px;
@@ -182,7 +183,7 @@ nav .container ul .login {
 }
 .first .container a:hover {
   background: #2c3333;
-  color: #54b435;
+  color: #63ec36;
 }
 
 .second {
@@ -198,7 +199,7 @@ nav .container ul .login {
   width: 40%;
 }
 .second .container .left h3 {
-  color: #54b435;
+  color: #63ec36;
   font-weight: 400;
   font-size: 17px;
 }
@@ -225,5 +226,98 @@ nav .container ul .login {
 }
 .second .container .left a:hover {
   background: #2c3333;
-  color: #6df141;
+  color: #63ec36;
+}
+
+.third {
+  background: #2c3333;
+  padding: 50px 0;
+}
+.third .container {
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+}
+.third .container .top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.third .container .top div h3 {
+  color: #63ec36;
+  font-weight: 400;
+}
+.third .container .top div h1 {
+  color: #fff;
+  font-size: 35px;
+  max-width: 600px;
+  font-weight: 600;
+  margin-top: 20px;
+}
+.third .container .top a {
+  color: #2c3333;
+  background: #63ec36;
+  padding: 10px 20px;
+  font-size: 20px;
+  border-radius: 1px;
+  display: inline-block;
+}
+.third .container .top a:hover {
+  background: #2c3333;
+  color: #63ec36;
+}
+.third .container .bottom {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.third .container .bottom .card {
+  width: 30%;
+  min-height: 400px;
+  background: #fff;
+  padding: 40px 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+  position: relative;
+  z-index: 12;
+  overflow: hidden;
+  text-align: center;
+  color: #2c3333;
+}
+.third .container .bottom .card:hover i {
+  color: #63ec36;
+}
+.third .container .bottom .card:hover a {
+  bottom: 0;
+}
+.third .container .bottom .card:hover a i {
+  color: #2c3333;
+}
+.third .container .bottom .card i {
+  font-size: 45px;
+}
+.third .container .bottom .card h3 {
+  font-weight: 500;
+}
+.third .container .bottom .card a {
+  width: 100%;
+  position: absolute;
+  bottom: -80px;
+  font-weight: 500;
+  padding: 20px;
+  display: inline-block;
+  left: 0;
+  background: #63ec36;
+  color: #2c3333;
+}
+.third .container .bottom .card a i {
+  font-size: 17px;
+}
+.third .container .bottom .card p {
+  color: #393053;
+  font-size: 15px;
 }/*# sourceMappingURL=index.css.map */

@@ -56,4 +56,26 @@
   .second .container .left h1 {
     font-size: 30px;
   }
+  .third .container .top {
+    flex-direction: column;
+    gap: 40px;
+  }
+}
+@media screen and (min-width: 320px) {
+  .third .container .bottom .card {
+    padding: 60px 20px;
+    width: 90%;
+  }
+}
+@media screen and (min-width: 562px) {
+  .third .container .bottom .card {
+    padding: 60px 20px;
+    width: 45%;
+  }
+}
+@media screen and (min-width: 968px) {
+  .third .container .bottom .card {
+    padding: 60px 20px;
+    width: 30%;
+  }
 }/*# sourceMappingURL=media.css.map */
